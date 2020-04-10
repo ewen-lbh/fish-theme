@@ -43,6 +43,10 @@ _pure_set_default pure_color_jobs pure_color_normal
 # Virtualenv for Python
 _pure_set_default pure_color_virtualenv pure_color_mute
 
+# Time
+_pure_set_default pure_color_time pure_color_mute
+
+
 # Print current working directory at the beginning of prompt
 # true (default):   current directory, git, user@hostname (ssh-only), command duration
 # false:            user@hostname (ssh-only), current directory, git, command duration
@@ -64,3 +68,4 @@ _pure_set_default pure_reverse_prompt_symbol_in_vimode true
 
 # Title
 _pure_set_default pure_symbol_title_bar_separator "—"
+

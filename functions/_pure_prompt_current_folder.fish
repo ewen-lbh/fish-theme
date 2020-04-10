@@ -22,5 +22,5 @@ function _pure_prompt_current_folder --argument-names current_prompt_width
     
     set --local current_folder_color (_pure_set_color $pure_color_current_directory)
 
-    echo "$current_folder_color  $current_folder"
+    echo "$current_folder_color$current_folder"
 end

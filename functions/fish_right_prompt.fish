@@ -59,7 +59,7 @@ function __bobthefish_timestamp -S -d 'Show the current timestamp'
     and return
 
     set -q theme_date_format
-    or set -l theme_date_format "+%c"
+    or set -l theme_date_format "+%Y-%m-%d"
 
     echo -n ' '
     date $theme_date_format
