@@ -70,9 +70,12 @@ function fish_right_prompt -d 'bobthefish is all about the right prompt'
     if [ "$theme_powerline_fonts" = "no" ]
         set __bobthefish_left_arrow_glyph '<'
     end
+    
+    set --local virtualenv (_pure_prompt_virtualenv)
+    echo -ne $virtualenv " " (set_color normal)
 
     set_color $fish_color_autosuggestion
-
+    
     __bobthefish_cmd_duration
     __bobthefish_timestamp
     set_color normal
