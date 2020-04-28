@@ -9,7 +9,7 @@ function _pure_prompt_current_folder --argument-names current_prompt_width
     set --local current_folder (_pure_parse_directory (math $COLUMNS - $current_prompt_width - 1))
     
     set --local current_folder (
-        echo $current_folder \
+        pwd -P \
         | sed "s|/mnt/d/projects/music|$path_symbol_music_projects_dir|" \
         | sed "s|/mnt/d/projects/.archived|$path_symbol_archived_projects_dir|" \
         | sed "s|/mnt/d/projects|$path_symbol_projects_dir|" \
